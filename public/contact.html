@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせ | 株式会社ニヘイ・コーポレーション</title>
-    <meta name="description" content="株式会社ニヘイ・コーポレーションへのお問い合わせ。製品、サービス、お取引に関するご相談を承ります。">
+    <title>問い合わせ | ニヘイ・コーポレーション</title>
+    <meta name="description" content="株式会社ニヘイ・コーポレーションへのお問い合わせページです。">
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,78 +13,91 @@
 <body>
     <header class="header">
         <div class="header-container">
-            <h1 class="logo">
-                <a href="index.html">NIHEI<span>Corp.</span></a>
-            </h1>
+            <button class="hamburger" id="hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+            <h1 class="logo"><a href="index.html">NIHEI<span>Corp.</span></a></h1>
             <nav class="nav" id="nav">
                 <ul class="nav-list">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="services.html">事業内容</a></li>
-                    <li><a href="company.html">企業情報</a></li>
-                    <li><a href="lab.html">ニヘイ研究所</a></li>
+                    <li><a href="index.html">ホーム<small>HOME</small></a></li>
+                    <li><a href="services.html">事業内容<small>Our Services</small></a></li>
+                    <li><a href="company.html">企業情報<small>Company Info</small></a></li>
+                    <li><a href="lab.html">ニヘイ研究所<small>Lab</small></a></li>
                     <li><a href="product.html">脳覚</a></li>
-                    <li><a href="news.html">ニュース</a></li>
-                    <li><a href="contact.html" class="nav-cta">お問い合わせ</a></li>
+                    <li><a href="news.html">ニュース<small>News</small></a></li>
+                    <li><a href="contact.html" class="nav-cta">問い合わせ<small>Contact</small></a></li>
                 </ul>
             </nav>
-            <button class="hamburger" id="hamburger" aria-label="メニューを開く">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </header>
 
-    <main>
-        <section class="page-header hero-small" style="height: 35vh; min-height: 300px; background: #333;">
-            <div class="hero-overlay" style="background: rgba(0,0,0,0.5);"></div>
-            <div class="hero-content container">
-                <h2 class="hero-title">お問い合わせ <span>Contact</span></h2>
-                <p class="hero-subtitle">ビジネスのご相談、製品のご質問など、お気軽にお寄せください。</p>
-            </div>
-        </section>
-
+    <main style="margin-top: var(--header-height);">
         <section class="section-padding">
             <div class="container" style="max-width: 800px;">
-                <p class="emphasize" style="text-align: center; margin-bottom: 50px;">お問い合わせの際は、以下のフォームに必要事項をご記入ください。<br>担当者より通常2営業日以内にご連絡いたします。</p>
+                <!-- プライバシーポリシー全文（REIWAの問い合わせページと同一の9項目） -->
+                <div style="background: #f9f9f9; padding: 30px; border-radius: 10px; margin-bottom: 40px; line-height: 2; font-size: 0.9rem; max-height: 400px; overflow-y: auto; border: 1px solid #eee;">
+                    <h4 style="margin-bottom: 15px; font-weight: 800;">1.個人情報の取得</h4>
+                    <p style="margin-bottom: 20px;">当社は、すべての事業で取扱う個人情報および従業員等の個人情報を取得する場合には、利用目的を明確に通知し、同意を得た上で、利用目的の達成に必要な範囲内のみ取得します。</p>
 
-                <form id="contact-form" class="contact-form" style="background: #fdfdfd; padding: 40px; border: 1px solid #eee; border-radius: 12px;">
-                    <div class="form-group" style="margin-bottom: 25px;">
-                        <label style="display: block; font-weight: 700; margin-bottom: 10px;">お名前 <span style="color: var(--primary-color);">*</span></label>
-                        <input type="text" name="name" placeholder="例：二瓶 太郎" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 5px;" required>
-                    </div>
-                    <div class="form-group" style="margin-bottom: 25px;">
-                        <label style="display: block; font-weight: 700; margin-bottom: 10px;">メールアドレス <span style="color: var(--primary-color);">*</span></label>
-                        <input type="email" name="email" placeholder="example@nihei-corp.jp" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 5px;" required>
-                    </div>
-                    <div class="form-group" style="margin-bottom: 25px;">
-                        <label style="display: block; font-weight: 700; margin-bottom: 10px;">お問い合わせ項目 <span style="color: var(--primary-color);">*</span></label>
-                        <select name="subject" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 5px; appearance: none; background: #fff;" required>
-                            <option value="">選択してください</option>
-                            <option value="callcenter">コールセンター事業について</option>
-                            <option value="product">製品「脳覚」について</option>
-                            <option value="ir">IR・企業情報について</option>
-                            <option value="other">その他</option>
-                        </select>
-                    </div>
-                    <div class="form-group" style="margin-bottom: 30px;">
-                        <label style="display: block; font-weight: 700; margin-bottom: 10px;">お問い合わせ内容 <span style="color: var(--primary-color);">*</span></label>
-                        <textarea name="message" rows="6" placeholder="具体的なご相談内容をご記入ください" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 5px;" required></textarea>
-                    </div>
+                    <h4 style="margin-bottom: 15px; font-weight: 800;">2.個人情報の利用</h4>
+                    <p style="margin-bottom: 20px;">当社は、個人情報を取得する際に同意を得た利用目的の範囲内で、業務の遂行上必要な限りにおいて利用します。また、同意を得た目的の範囲を超えて個人情報を利用する必要が生じた場合は、事前に個人情報提供者にその目的を通知し、同意を得た上で利用します。委託された個人情報についても同様の扱いとします。</p>
 
-                    <div class="privacy-consent-box" style="background: #f7f7f7; padding: 25px; border-radius: 8px; margin-bottom: 30px;">
-                        <h5 style="margin-bottom: 15px; font-weight: 800; border-bottom: 2px solid #ddd; padding-bottom: 5px;">個人情報の取り扱いへの同意</h5>
-                        <p style="font-size: 0.85rem; height: 120px; overflow-y: scroll; background: #fff; padding: 15px; border: 1px solid #eee; margin-bottom: 20px;">
-                            ご入力いただいた個人情報は、お問い合わせへの回答および有用な情報の提供のみに利用いたします。法令に基づく場合を除き、第三者への提供は行いません。詳細については、弊社の<a href="privacy.html" target="_blank" style="color: var(--primary-color); text-decoration: underline;">プライバシーポリシー</a>をご確認ください。
-                        </p>
-                        <label style="display: flex; align-items: center; gap: 10px; font-weight: 800; cursor: pointer;">
-                            <input type="checkbox" id="privacy-agreement" required style="width: 20px; height: 20px; accent-color: var(--primary-color);">
-                            個人情報の取り扱いについて同意する
+                    <h4 style="margin-bottom: 15px; font-weight: 800;">3.個人情報の第三者への提供</h4>
+                    <p style="margin-bottom: 20px;">当社は、次の場合を除いて取得した個人情報を第三者に預託・提供することはありません。また、承諾をいただいた場合でも、当社以外の第三者に個人情報を開示、預託、および提供する場合には、当該第三者と個人情報保護に関する取り決めをおこない、個人情報保護に万全を期すよう努めます。</p>
+
+                    <h4 style="margin-bottom: 15px; font-weight: 800;">4.個人情報の管理</h4>
+                    <p style="margin-bottom: 20px;">当社は、個人情報の紛失、破壊、改ざん、漏洩および個人情報への不正アクセスを防止するために、関係する法令、国が定める指針その他の規範および当社内部規定に従います。</p>
+
+                    <h4 style="margin-bottom: 15px; font-weight: 800;">5.業務委託における個人情報の扱い</h4>
+                    <p style="margin-bottom: 20px;">当社が個人情報の取扱い業務を委託する場合は、当社の個人情報保護に関する安全基準に基づいて、安全性を確認した委託先に限定することとします。</p>
+
+                    <h4 style="margin-bottom: 15px; font-weight: 800;">6.受託業務に含まれる個人情報の扱い</h4>
+                    <p style="margin-bottom: 20px;">当社が業務を受託した際に業務遂行に必要な個人情報が含まれていた場合には、お預かりした個人情報を厳正に管理し、契約の範囲内で利用します。</p>
+
+                    <h4 style="margin-bottom: 15px; font-weight: 800;">7.個人情報の開示・訂正・利用停止・消去</h4>
+                    <p style="margin-bottom: 20px;">当社は、個人情報に関する個人の権利を尊重し、個人情報提供者本人および代理人から、利用目的の通知、内容の開示・訂正・追加・削除、利用停止等の求めがあった場合は、本人確認の上で、速やかに対応します。</p>
+
+                    <h4 style="margin-bottom: 15px; font-weight: 800;">8.個人情報に関するお問い合わせ</h4>
+                    <p style="margin-bottom: 20px;">当社の個人情報保護に対するお問い合わせ・ご意見・ご相談・苦情等がございましたら、「個人情報に関するお問い合わせ窓口」へご連絡ください。</p>
+
+                    <h4 style="margin-bottom: 15px; font-weight: 800;">9.他社ウェブサイトへのリンクについて</h4>
+                    <p>当社のウェブサイトからリンクされている他社のウェブサイトにおける個人情報の取り扱いの基準や内容において、当社は責任を負うものではありません。リンク先ウェブサイトのプライバシーポリシー等をご覧ください。</p>
+                </div>
+
+                <!-- 同意チェックボックス（REIWAと同一） -->
+                <form id="contact-form" style="margin-top: 30px;">
+                    <div style="margin-bottom: 30px; text-align: center;">
+                        <label style="font-weight: 700; cursor: pointer;">
+                            <input type="checkbox" id="privacy-agree" required style="margin-right: 10px; transform: scale(1.3);">
+                            プライバシーポリシーに同意する
                         </label>
                     </div>
 
-                    <div class="btn-center">
-                        <button type="submit" class="btn btn-primary" style="border: none; width: 100%;">上記内容で送信する</button>
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: 700; display: block; margin-bottom: 8px;">会社名</label>
+                        <input type="text" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: 700; display: block; margin-bottom: 8px;">お名前</label>
+                        <input type="text" required style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: 700; display: block; margin-bottom: 8px;">フリガナ</label>
+                        <input type="text" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: 700; display: block; margin-bottom: 8px;">メールアドレス</label>
+                        <input type="email" required style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: 700; display: block; margin-bottom: 8px;">電話番号</label>
+                        <input type="tel" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                    </div>
+                    <div style="margin-bottom: 30px;">
+                        <label style="font-weight: 700; display: block; margin-bottom: 8px;">問い合わせ内容</label>
+                        <textarea rows="6" required style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; resize: vertical;"></textarea>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn btn-primary" style="min-width: 250px;">送信する</button>
                     </div>
                 </form>
             </div>
@@ -96,47 +109,37 @@
             <div class="footer-info">
                 <h2 class="logo-footer">NIHEI<span>Corp.</span></h2>
                 <p>株式会社ニヘイ・コーポレーション</p>
-                <p class="footer-address">〒100-0000 東京都千代田区XX-XX-XX</p>
-                <p class="footer-tel">TEL: 03-XXXX-XXXX</p>
             </div>
             <div class="footer-links">
                 <div class="footer-link-group">
-                    <h4>サイトマップ</h4>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="services.html">事業内容</a></li>
-                        <li><a href="company.html">企業情報</a></li>
-                        <li><a href="lab.html">ニヘイ研究所</a></li>
-                        <li><a href="product.html">脳覚 BrainUp</a></li>
-                        <li><a href="news.html">ニュース</a></li>
-                        <li><a href="contact.html">お問い合わせ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-link-group">
-                    <h4>法的表記</h4>
                     <ul>
                         <li><a href="privacy.html">プライバシーポリシー</a></li>
                         <li><a href="security.html">情報セキュリティ方針</a></li>
-                        <li><a href="commerce.html">特定商取引法に基づく表記</a></li>
-                    </ul>
-                </div>
-                <div class="footer-link-group">
-                    <h4>グループ情報</h4>
-                    <ul>
-                        <li><a href="lab.html">ニヘイ自然科学研究所</a></li>
-                        <li><a href="about.html">ニヘイ・ホールディングス</a></li>
+                        <li><a href="commerce.html">特定商取引に関する法律に基づく表記</a></li>
+                        <li><a href="contact.html">問い合わせ</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p class="copyright">&copy; 2026 NIHEI Corporation. All rights reserved.</p>
+                <p class="copyright">Copyright &copy; ニヘイ・コーポレーション All Rights Reserved.</p>
+                <p style="font-size: 0.8rem; margin-top: 10px; color: #888;">株式会社ニヘイ・ホールディングスグループ ｜ 株式会社ニヘイ・コーポレーション ｜ 株式会社ニヘイ・アドバンスト</p>
             </div>
         </div>
+        <nav style="background: #000; padding: 15px 0;">
+            <div class="container" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; font-size: 0.85rem;">
+                <a href="index.html" style="color: #aaa;">ホーム</a>
+                <a href="services.html" style="color: #aaa;">事業内容</a>
+                <a href="company.html" style="color: #aaa;">企業情報</a>
+                <a href="lab.html" style="color: #aaa;">ニヘイ研究所</a>
+                <a href="product.html" style="color: #aaa;">脳覚</a>
+                <a href="news.html" style="color: #aaa;">ニュース</a>
+                <a href="contact.html" style="color: #aaa;">問い合わせ</a>
+            </div>
+        </nav>
     </footer>
 
-    <script src="js/site-data.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

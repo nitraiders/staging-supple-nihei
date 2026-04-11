@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ニュース | 株式会社ニヘイ・コーポレーション</title>
-    <meta name="description" content="株式会社ニヘイ・コーポレーションの最新ニュース、プレスリリース、研究成果についてお知らせします。">
+    <title>ニュース一覧 | ニヘイ・コーポレーション</title>
+    <meta name="description" content="株式会社ニヘイ・コーポレーションのニュース一覧です。">
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,78 +13,94 @@
 <body>
     <header class="header">
         <div class="header-container">
-            <h1 class="logo">
-                <a href="index.html">NIHEI<span>Corp.</span></a>
-            </h1>
+            <button class="hamburger" id="hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+            <h1 class="logo"><a href="index.html">NIHEI<span>Corp.</span></a></h1>
             <nav class="nav" id="nav">
                 <ul class="nav-list">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="services.html">事業内容</a></li>
-                    <li><a href="company.html">企業情報</a></li>
-                    <li><a href="lab.html">ニヘイ研究所</a></li>
+                    <li><a href="index.html">ホーム<small>HOME</small></a></li>
+                    <li><a href="services.html">事業内容<small>Our Services</small></a></li>
+                    <li><a href="company.html">企業情報<small>Company Info</small></a></li>
+                    <li><a href="lab.html">ニヘイ研究所<small>Lab</small></a></li>
                     <li><a href="product.html">脳覚</a></li>
-                    <li><a href="news.html">ニュース</a></li>
-                    <li><a href="contact.html" class="nav-cta">お問い合わせ</a></li>
+                    <li><a href="news.html">ニュース<small>News</small></a></li>
+                    <li><a href="contact.html" class="nav-cta">問い合わせ<small>Contact</small></a></li>
                 </ul>
             </nav>
-            <button class="hamburger" id="hamburger" aria-label="メニューを開く">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </header>
 
-    <main>
-        <section class="page-header hero-small" style="height: 30vh; min-height: 250px; background: #333;">
-            <div class="hero-overlay" style="background: rgba(0,0,0,0.5);"></div>
-            <div class="hero-content container">
-                <h2 class="hero-title">ニュース <span>News</span></h2>
-                <p class="hero-subtitle">ニヘイ・コーポレーションの最新情報をお届けします。</p>
+    <main style="margin-top: var(--header-height);">
+        <!-- パンくず -->
+        <div style="background: #f5f5f5; padding: 10px 0; font-size: 0.85rem;">
+            <div class="container">
+                <a href="index.html">HOME</a> &gt; ニュース一覧
             </div>
-        </section>
+        </div>
 
         <section class="section-padding">
             <div class="container" style="max-width: 900px;">
-                <div class="news-list-container">
-                    <article class="news-item" style="border-bottom: 1px solid #eee; padding-bottom: 25px; margin-bottom: 25px;">
-                        <a href="#" style="display: block; text-decoration: none; color: inherit;">
-                            <time class="news-date" style="color: #666; font-size: 0.9rem; margin-bottom: 5px; display: block;">2026.04.10</time>
-                            <span class="news-category category-info" style="font-size: 0.75rem; background: var(--primary-color); color: #fff; padding: 2px 10px; border-radius: 3px; display: inline-block; margin-bottom: 10px;">お知らせ</span>
-                            <h3 class="news-title" style="font-size: 1.25rem; font-weight: 700;">公式サイトをリニューアルオープンいたしました。</h3>
-                        </a>
-                    </article>
+                <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 40px;">ニュース一覧</h2>
 
-                    <article class="news-item" style="border-bottom: 1px solid #eee; padding-bottom: 25px; margin-bottom: 25px;">
-                        <a href="#" style="display: block; text-decoration: none; color: inherit;">
-                            <time class="news-date" style="color: #666; font-size: 0.9rem; margin-bottom: 5px; display: block;">2026.04.05</time>
-                            <span class="news-category category-product" style="font-size: 0.75rem; background: #333; color: #fff; padding: 2px 10px; border-radius: 3px; display: inline-block; margin-bottom: 10px;">製品</span>
-                            <h3 class="news-title" style="font-size: 1.25rem; font-weight: 700;">知的パフォーマンス向上サプリ『脳覚』の新ラインナップが登場。</h3>
-                        </a>
-                    </article>
+                <!-- REIWAのニュース記事一覧（転写） -->
+                <article style="border-bottom: 1px solid #eee; padding: 25px 0;">
+                    <time style="color: #888; font-size: 0.9rem;">2025-05-01</time>
+                    <span style="background: var(--primary-color); color: #fff; padding: 2px 8px; font-size: 0.75rem; border-radius: 3px; margin-left: 10px;">NEW!</span>
+                    <h3 style="font-weight: 700; margin-top: 10px;">当社商品の【脳覚】がテレビ・FM・Youtube・各SNSに紹介されました！</h3>
+                    <p style="color: #666; margin-top: 8px; font-size: 0.9rem;">ミセスマートTV・neo ～Doctorsｾﾚｸｼｮﾝ～＃214 (2025年4月26日放映) 中山エミリさん、鳥居みゆきさん、小椋ケンイチさんなどがご出演！...</p>
+                </article>
 
-                    <article class="news-item" style="border-bottom: 1px solid #eee; padding-bottom: 25px; margin-bottom: 25px;">
-                        <a href="#" style="display: block; text-decoration: none; color: inherit;">
-                            <time class="news-date" style="color: #666; font-size: 0.9rem; margin-bottom: 5px; display: block;">2026.03.20</time>
-                            <span class="news-category category-lab" style="font-size: 0.75rem; background: #666; color: #fff; padding: 2px 10px; border-radius: 3px; display: inline-block; margin-bottom: 10px;">研究</span>
-                            <h3 class="news-title" style="font-size: 1.25rem; font-weight: 700;">L-テアニン配合比率に関する新たな検証結果を学会にて発表。</h3>
-                        </a>
-                    </article>
+                <article style="border-bottom: 1px solid #eee; padding: 25px 0;">
+                    <time style="color: #888; font-size: 0.9rem;">2025-03-24</time>
+                    <h3 style="font-weight: 700; margin-top: 10px;">事務所移転のお知らせ</h3>
+                    <p style="color: #666; margin-top: 8px; font-size: 0.9rem;">平素より格別のご愛顧を賜り、誠にありがとうございます。このたび、弊社の所在地が変更となりましたので、ご案内申し上げます。新住所 〒135-0064東京都江東区青海２丁目7番4号...</p>
+                </article>
 
-                    <article class="news-item" style="border-bottom: 1px solid #eee; padding-bottom: 25px; margin-bottom: 25px;">
-                        <a href="#" style="display: block; text-decoration: none; color: inherit;">
-                            <time class="news-date" style="color: #666; font-size: 0.9rem; margin-bottom: 5px; display: block;">2026.03.01</time>
-                            <span class="news-category category-info" style="font-size: 0.75rem; background: var(--primary-color); color: #fff; padding: 2px 10px; border-radius: 3px; display: inline-block; margin-bottom: 10px;">お知らせ</span>
-                            <h3 class="news-title" style="font-size: 1.25rem; font-weight: 700;">代表・二瓶亘広が、健康経営推進フォーラムに登壇いたしました。</h3>
-                        </a>
-                    </article>
-                </div>
+                <article style="border-bottom: 1px solid #eee; padding: 25px 0;">
+                    <time style="color: #888; font-size: 0.9rem;">2024-12-18</time>
+                    <h3 style="font-weight: 700; margin-top: 10px;">年末年始休業のお知らせ(令和6年)</h3>
+                </article>
 
-                <!-- Pagination Placeholder -->
-                <div class="pagination" style="display: flex; justify-content: center; gap: 10px; margin-top: 50px;">
-                    <span style="background: var(--primary-color); color: #fff; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; border-radius: 5px; font-weight: 700;">1</span>
-                    <a href="#" style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; border: 1px solid #eee; border-radius: 5px; color: #333;">2</a>
-                    <a href="#" style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; border: 1px solid #eee; border-radius: 5px; color: #333;">&gt;</a>
+                <article style="border-bottom: 1px solid #eee; padding: 25px 0;">
+                    <time style="color: #888; font-size: 0.9rem;">2024-08-05</time>
+                    <h3 style="font-weight: 700; margin-top: 10px;">令和6年度 夏季休業のお知らせ</h3>
+                </article>
+
+                <article style="border-bottom: 1px solid #eee; padding: 25px 0;">
+                    <time style="color: #888; font-size: 0.9rem;">2024-04-24</time>
+                    <h3 style="font-weight: 700; margin-top: 10px;">ゴールデンウィーク休業のお知らせ</h3>
+                </article>
+
+                <article style="border-bottom: 1px solid #eee; padding: 25px 0;">
+                    <time style="color: #888; font-size: 0.9rem;">2023-12-06</time>
+                    <h3 style="font-weight: 700; margin-top: 10px;">年末年始休業のお知らせ</h3>
+                </article>
+
+                <article style="border-bottom: 1px solid #eee; padding: 25px 0;">
+                    <time style="color: #888; font-size: 0.9rem;">2023-07-27</time>
+                    <h3 style="font-weight: 700; margin-top: 10px;">令和5年度 夏季休業のお知らせ</h3>
+                </article>
+
+                <article style="border-bottom: 1px solid #eee; padding: 25px 0;">
+                    <time style="color: #888; font-size: 0.9rem;">2023-02-06</time>
+                    <h3 style="font-weight: 700; margin-top: 10px;">事務所移転のお知らせ</h3>
+                </article>
+
+                <article style="border-bottom: 1px solid #eee; padding: 25px 0;">
+                    <time style="color: #888; font-size: 0.9rem;">2022-12-19</time>
+                    <h3 style="font-weight: 700; margin-top: 10px;">年末年始休業のお知らせ</h3>
+                </article>
+
+                <article style="padding: 25px 0;">
+                    <time style="color: #888; font-size: 0.9rem;">2022-08-02</time>
+                    <h3 style="font-weight: 700; margin-top: 10px;">夏季休業のお知らせ</h3>
+                </article>
+
+                <!-- ページネーション（REIWAと同じ構造） -->
+                <div style="display: flex; justify-content: center; gap: 10px; margin-top: 40px;">
+                    <span style="background: var(--primary-color); color: #fff; padding: 8px 15px; border-radius: 5px;">1</span>
+                    <a href="#" style="padding: 8px 15px; border: 1px solid #ddd; border-radius: 5px; color: #666;">2</a>
+                    <a href="#" style="padding: 8px 15px; border: 1px solid #ddd; border-radius: 5px; color: #666;">3</a>
+                    <a href="#" style="padding: 8px 15px; border: 1px solid #ddd; border-radius: 5px; color: #666;">»</a>
                 </div>
             </div>
         </section>
@@ -95,47 +111,37 @@
             <div class="footer-info">
                 <h2 class="logo-footer">NIHEI<span>Corp.</span></h2>
                 <p>株式会社ニヘイ・コーポレーション</p>
-                <p class="footer-address">〒100-0000 東京都千代田区XX-XX-XX</p>
-                <p class="footer-tel">TEL: 03-XXXX-XXXX</p>
             </div>
             <div class="footer-links">
                 <div class="footer-link-group">
-                    <h4>サイトマップ</h4>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="services.html">事業内容</a></li>
-                        <li><a href="company.html">企業情報</a></li>
-                        <li><a href="lab.html">ニヘイ研究所</a></li>
-                        <li><a href="product.html">脳覚 BrainUp</a></li>
-                        <li><a href="news.html">ニュース</a></li>
-                        <li><a href="contact.html">お問い合わせ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-link-group">
-                    <h4>法的表記</h4>
                     <ul>
                         <li><a href="privacy.html">プライバシーポリシー</a></li>
                         <li><a href="security.html">情報セキュリティ方針</a></li>
-                        <li><a href="commerce.html">特定商取引法に基づく表記</a></li>
-                    </ul>
-                </div>
-                <div class="footer-link-group">
-                    <h4>グループ情報</h4>
-                    <ul>
-                        <li><a href="lab.html">ニヘイ自然科学研究所</a></li>
-                        <li><a href="about.html">ニヘイ・ホールディングス</a></li>
+                        <li><a href="commerce.html">特定商取引に関する法律に基づく表記</a></li>
+                        <li><a href="contact.html">問い合わせ</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p class="copyright">&copy; 2026 NIHEI Corporation. All rights reserved.</p>
+                <p class="copyright">Copyright &copy; ニヘイ・コーポレーション All Rights Reserved.</p>
+                <p style="font-size: 0.8rem; margin-top: 10px; color: #888;">株式会社ニヘイ・ホールディングスグループ ｜ 株式会社ニヘイ・コーポレーション ｜ 株式会社ニヘイ・アドバンスト</p>
             </div>
         </div>
+        <nav style="background: #000; padding: 15px 0;">
+            <div class="container" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; font-size: 0.85rem;">
+                <a href="index.html" style="color: #aaa;">ホーム</a>
+                <a href="services.html" style="color: #aaa;">事業内容</a>
+                <a href="company.html" style="color: #aaa;">企業情報</a>
+                <a href="lab.html" style="color: #aaa;">ニヘイ研究所</a>
+                <a href="product.html" style="color: #aaa;">脳覚</a>
+                <a href="news.html" style="color: #aaa;">ニュース</a>
+                <a href="contact.html" style="color: #aaa;">問い合わせ</a>
+            </div>
+        </nav>
     </footer>
 
-    <script src="js/site-data.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
