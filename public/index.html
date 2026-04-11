@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>株式会社ニヘイ・コーポレーション | サプリメントで笑顔を創造する</title>
-    <meta name="description" content="天然由来成分と科学的根拠に基づいたサプリメントで、皆様の健康と笑顔をサポートします。">
+    <meta name="description" content="株式会社ニヘイ・コーポレーション。アウトバンド営業という弊社の強みを最大限に活かしたサービスを提供いたします。">
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="header-container">
+            <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <h1 class="logo">
-                <a href="/">NIHEI<span>Corp.</span></a>
+                <a href="index.html">NIHEI<span>Corp.</span></a>
             </h1>
+            <nav class="nav" id="nav">
                 <ul class="nav-list">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="services.html">事業内容</a></li>
@@ -25,11 +31,7 @@
                     <li><a href="news.html">ニュース</a></li>
                     <li><a href="contact.html" class="nav-cta">お問い合わせ</a></li>
                 </ul>
-            <button class="hamburger" id="hamburger" aria-label="メニューを開く">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            </nav>
         </div>
     </header>
 
@@ -41,67 +43,61 @@
                 <p class="hero-subtitle">天然素材と最先端科学の融合による、<br>次世代のウェルネス体験をあなたに。</p>
                 <div class="hero-btns">
                     <a href="product.html" class="btn btn-primary">製品を見る</a>
-                    <a href="about.html" class="btn btn-secondary">私たちについて</a>
+                    <a href="company.html" class="btn btn-secondary">企業情報</a>
                 </div>
             </div>
         </section>
 
-        <section id="news" class="news section-padding">
-            <div class="container">
-                <h3 class="section-title">Information<span>新着情報</span></h3>
-                <ul class="news-list">
-                    <li>
-                        <span class="news-date">2026.04.10</span>
-                        <span class="news-category category-info">お知らせ</span>
-                        <a href="#" class="news-link">公式サイトをリニューアルオープンいたしました。</a>
-                    </li>
-                    <li>
-                        <span class="news-date">2026.04.05</span>
-                        <span class="news-category category-product">製品</span>
-                        <a href="#" class="news-link">「脳覚」の新ラインナップが登場。</a>
-                    </li>
-                </ul>
-                <div class="btn-center">
-                    <a href="#" class="btn btn-text">一覧を見る</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="services" class="services section-padding">
+        <!-- Mirror Cards Section -->
+        <section class="section-padding">
             <div class="container">
                 <div class="grid-3">
-                    <div class="service-card">
-                        <div class="card-img" id="service-img-1"></div>
-                        <h4>事業内容</h4>
-                        <p>アウトバウンド営業を主軸とした、確かな実績を持つ営業支援サービス。</p>
-                        <a href="services.html" class="btn btn-card">詳しく見る</a>
+                    <div class="service-card" style="border: 1px solid #eee; overflow: hidden;">
+                        <div style="height: 200px; background: #eee; display: flex; align-items: center; justify-content: center; font-size: 3rem;">健</div>
+                        <div style="padding: 30px;">
+                            <h4 style="font-weight: 800; margin-bottom: 15px;">健康への貢献</h4>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">確かなエビデンスに基づいた製品で、皆様の健康寿命の延伸をサポートします。</p>
+                            <a href="services.html" class="btn btn-secondary" style="min-width: 150px; padding: 10px; color: var(--primary-color); border-color: var(--primary-color);">詳しく見る</a>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <div class="card-img" id="service-img-2"></div>
-                        <h4>企業情報</h4>
-                        <p>代表「二瓶 亘広」の強い信念と、ニヘイ・コーポレーションの歩みをご紹介します。</p>
-                        <a href="company.html" class="btn btn-card">詳しく見る</a>
+                    <div class="service-card" style="border: 1px solid #eee; overflow: hidden;">
+                        <div style="height: 200px; background: #eee; display: flex; align-items: center; justify-content: center; font-size: 3rem;">美</div>
+                        <div style="padding: 30px;">
+                            <h4 style="font-weight: 800; margin-bottom: 15px;">美容への貢献</h4>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">内側からの輝きを追求し、独自の美容成分を配合した製品開発を行っています。</p>
+                            <a href="services.html" class="btn btn-secondary" style="min-width: 150px; padding: 10px; color: var(--primary-color); border-color: var(--primary-color);">詳しく見る</a>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <div class="card-img" id="service-img-3"></div>
-                        <h4>ニヘイ研究所</h4>
-                        <p>天然由来と最新科学の融合。知的パフォーマンスを支える成分研究の最前線。</p>
-                        <a href="lab.html" class="btn btn-card">詳しく見る</a>
+                    <div class="service-card" style="border: 1px solid #eee; overflow: hidden;">
+                        <div style="height: 200px; background: #eee; display: flex; align-items: center; justify-content: center; font-size: 3rem;">衛</div>
+                        <div style="padding: 30px;">
+                            <h4 style="font-weight: 800; margin-bottom: 15px;">衛生への貢献</h4>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">次世代の衛生管理。より安全で快適な生活環境をテクノロジーで実現します。</p>
+                            <a href="services.html" class="btn btn-secondary" style="min-width: 150px; padding: 10px; color: var(--primary-color); border-color: var(--primary-color);">詳しく見る</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="product" class="product-special section-padding">
-            <div class="container flex-row-reverse">
-                <div class="product-text">
-                    <h3 class="section-title left">脳覚<span>BrainUp</span></h3>
-                    <p class="emphasize">天然由来 × 科学的サポート</p>
-                    <p>厳選された天然成分を、最新のバイオテクノロジーで最適化。現代人の「思考」と「活力」を支える、安心と信頼のフラッグシップモデルです。</p>
-                    <a href="product.html" class="btn btn-primary">製品詳細を見る</a>
-                </div>
-                <div class="product-visual">
-                    <div class="placeholder-img" id="product-img"></div>
+        <!-- Mirror News Section -->
+        <section id="news" class="section-padding" style="background: #f9f9f9;">
+            <div class="container">
+                <h3 class="section-title">Information<span>ニュース</span></h3>
+                <div style="max-width: 900px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                    <ul class="news-list">
+                        <li style="border-bottom: 1px solid #eee; padding: 15px 0;">
+                            <time style="color: #888; margin-right: 20px;">2026.04.10</time>
+                            <a href="news.html" style="font-weight: 700;">公式サイトをリニューアルオープンいたしました。</a>
+                        </li>
+                        <li style="border-bottom: 1px solid #eee; padding: 15px 0;">
+                            <time style="color: #888; margin-right: 20px;">2026.04.05</time>
+                            <a href="news.html" style="font-weight: 700;">知的パフォーマンス向上サプリ『脳覚』の新ラインナップが登場。</a>
+                        </li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="news.html" style="color: var(--primary-color); font-weight: 800;">一覧を見る &gt;</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -140,7 +136,7 @@
                     <h4>グループ情報</h4>
                     <ul>
                         <li><a href="lab.html">ニヘイ自然科学研究所</a></li>
-                        <li><a href="about.html">ニヘイ・ホールディングス</a></li>
+                        <li><a href="HOLDINGS.html">ニヘイ・ホールディングス</a></li>
                     </ul>
                 </div>
             </div>
