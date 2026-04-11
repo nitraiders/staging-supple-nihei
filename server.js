@@ -3,14 +3,14 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// 静的ファイルの提供（拡張子なしでのアクセスにも配慮する場合は別途設定が必要ですが、現在は .html 付きでリンクしています）
+// 静的ファイルの提供（マルチページ対応）
 app.use(express.static(path.join(__dirname, 'public')));
 
-// 404エラー時に index.html へ戻す（オプション）
+// 404エラー時に index.html へ戻す
 app.use((req, res) => {
-    res.status(404).sendFile(path.join(__dirname, 'public', 'index.html'));
+      res.status(404).sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+      console.log(`Server is running on http://localhost:${PORT}`);
 });
