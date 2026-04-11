@@ -4,11 +4,11 @@
  */
 const SITE_DATA = {
     company: {
-        name: "株式会社レイワ・コーポレーション",
-        nameEn: "REIWA Corp.",
+        name: "株式会社ニヘイ・コーポレーション",
+        nameEn: "NIHEI Corp.",
         address: "〒100-0000 東京都千代田区XX-XX-XX",
         phone: "03-XXXX-XXXX",
-        email: "info@reiwa-corp.example.com"
+        email: "info@nihei-corp.example.com"
     },
     slogan: {
         main: "笑顔から広がる<br>価値を創造します。",

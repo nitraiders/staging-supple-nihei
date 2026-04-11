@@ -3,12 +3,12 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// public フォルダを静的ファイルとして提供
+// 静的ファイルの提供（拡張子なしでのアクセスにも配慮する場合は別途設定が必要ですが、現在は .html 付きでリンクしています）
 app.use(express.static(path.join(__dirname, 'public')));
 
-// 全てのルートを index.html に向ける（SPA構成への配慮）
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// 404エラー時に index.html へ戻す（オプション）
+app.use((req, res) => {
+    res.status(404).sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(PORT, () => {
