@@ -45,13 +45,13 @@ function syncSiteData() {
         el.innerHTML = `<a href="index.html">NIHEI<span>Corp.</span></a>`;
     });
 
-    // キャッチコピー
-    if (document.querySelector('.hero-title')) {
-        document.querySelector('.hero-title').innerHTML = SITE_DATA.slogan.main;
-    }
-    if (document.querySelector('.hero-subtitle')) {
-        document.querySelector('.hero-subtitle').innerHTML = SITE_DATA.slogan.sub;
-    }
+    // キャッチコピー (index.htmlで個別に設定しているため無効化)
+    // if (document.querySelector('.hero-title')) {
+    //     document.querySelector('.hero-title').innerHTML = SITE_DATA.slogan.main;
+    // }
+    // if (document.querySelector('.hero-subtitle')) {
+    //     document.querySelector('.hero-subtitle').innerHTML = SITE_DATA.slogan.sub;
+    // }
 
     // 代表名 (一括置換用)
     document.querySelectorAll('.ceo-name').forEach(el => {
