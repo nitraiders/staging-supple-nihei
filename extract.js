@@ -1,18 +1,22 @@
 const fs = require('fs');
-const html = fs.readFileSync('scratch_reiwa_product.html', 'utf8');
-
-// Find iframe
-const iframeMatches = html.match(/<iframe[^>]*\bsrc\s*=\s*(["'])(https:\/\/www\.youtube\.com.*?)(\1)[^>]*><\/iframe>/i);
-if (iframeMatches) {
-    console.log("IFRAME URL:", iframeMatches[2]);
-} else {
-    console.log("No Youtube iframe found.");
+let c = fs.readFileSync('brainup.html', 'utf8');
+if (c.includes('\0')) c = fs.readFileSync('brainup.html', 'utf16le');
+const regex = /<a class="elementor-toggle-title"[^>]*>(.*?)<\/a>\s*<\/div>\s*<div[^>]*class="elementor-tab-content[^>]*>(.*?)<\/div>/gs;
+let m;
+let count = 0;
+while (m = regex.exec(c)) {
+    console.log('Q: ' + m[1].trim());
+    console.log('A: ' + m[2].trim());
+    console.log('---');
+    count++;
 }
-
-// Find images
-const imgMatches = html.matchAll(/<img[^>]*\bsrc\s*=\s*(["'])(.*?nogaku.*?\.jpg|.*?otamesi.*?\.jpg)(\1)[^>]*>/gi);
-const images = new Set();
-for (const match of imgMatches) {
-    images.add(match[2]);
+if (count === 0) {
+    console.log("No Q&A found! Looking for alternative structure...");
+    // Alternative match if structure is slightly different
+    const altRegex = /<dt[^>]*>(.*?)<\/dt>\s*<dd[^>]*>(.*?)<\/dd>/gs;
+    while (m = altRegex.exec(c)) {
+        console.log('Q: ' + m[1].trim());
+        console.log('A: ' + m[2].trim());
+        console.log('---');
+    }
 }
-console.log("IMAGES:", Array.from(images).join('\n'));
