@@ -167,15 +167,16 @@ img {
     position: absolute;
     right: 15px;
     z-index: 1001;
-    cursor: pointer;
-    background: none;
-    border: none;
-    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 35px;
-    width: 45px;
+    justify-content: center;
+    gap: 6px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
 }
 
 .hamburger span {
