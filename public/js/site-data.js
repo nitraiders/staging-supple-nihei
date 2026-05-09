@@ -34,7 +34,7 @@ const SITE_DATA = {
     },
     news: [
         { date: "2026.04.10", category: "お知らせ", text: "公式サイトをリニューアルオープンいたしました。", link: "#" },
-        { date: "2026.04.05", category: "製品", text: "「脳覚」の新ラインナップが登場。", link: "#" }
+        { date: "2026.04.05", category: "製品", text: "「KoKoRoMi」の新ラインナップが登場。", link: "#" }
     ]
 };
 

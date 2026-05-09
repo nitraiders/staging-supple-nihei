@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #d11171; /* マゼンタ */
-    --primary-light: #fbe6f0;
-    --text-color: #1a1a1a; /* より濃く、コントラストを強化 */
-    --text-light: #444; /* 屋外での視認性を考慮 */
+    --primary-color: #8bb374; /* KoKoRoMi グリーン */
+    --primary-light: #e6eedf;
+    --text-color: #2c3525; /* 少し緑がかったダークグレー */
+    --text-light: #555;
     --bg-white: #ffffff;
     --bg-light: #f9f9f9;
     --font-main: 'Noto Sans JP', sans-serif;
