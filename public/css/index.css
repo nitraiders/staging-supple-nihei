@@ -114,21 +114,21 @@ img {
 .nav {
     position: fixed;
     top: 0;
-    left: -100%; /* 左側からスライドに変更 */
+    right: -100%; /* 右側からスライド */
     width: 80%;
     height: 100vh;
-    background: var(--bg-white);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-    z-index: 999;
+    justify-content: center;
 }
 
 .nav.active {
-    left: 0;
-    box-shadow: 10px 0 30px rgba(0,0,0,0.1);
+    right: 0;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
 }
 
 .nav-list {
@@ -143,6 +143,16 @@ img {
     font-weight: 700;
     padding: 15px 30px;
     display: block;
+    line-height: 1.4;
+}
+
+.nav-list a small {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #888;
+    margin-top: 5px;
+    letter-spacing: 0.05em;
 }
 
 .nav-cta {
@@ -152,20 +162,20 @@ img {
     box-shadow: 0 5px 15px rgba(139, 179, 116, 0.3);
 }
 
-/* Hamburger (左側配置) */
+/* Hamburger (右側配置) */
 .hamburger {
     position: absolute;
-    left: 15px;
+    right: 15px;
     z-index: 1001;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 6px;
-    width: 32px;
-    height: 32px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
+    justify-content: space-between;
+    height: 35px;
+    width: 45px;
 }
 
 .hamburger span {
@@ -237,13 +247,16 @@ img {
 /* Buttons */
 .btn {
     display: inline-block;
-    padding: 18px 50px;
-    border-radius: 5px;
-    font-weight: 800; /* 本気の太字 */
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
     text-align: center;
+    transition: all 0.3s ease;
+    border: none;
     cursor: pointer;
+    font-family: inherit;
     min-width: 240px;
-    transition: var(--transition);
 }
 
 .btn-primary {
