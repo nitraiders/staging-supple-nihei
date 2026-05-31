@@ -1,39 +1,45 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    const nav = document.getElementById('nav');
-    const navLinks = document.querySelectorAll('.nav-list a');
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.getElementById("site-nav");
 
-    // ハンバーガーメニューの開閉
-    const toggleMenu = () => {
-        hamburger.classList.toggle('active');
-        nav.classList.toggle('active');
-        
-        // メニューが開いているときはスクロールを防止
-        if (nav.classList.contains('active')) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = 'auto';
-        }
-    };
-
-    hamburger.addEventListener('click', toggleMenu);
-
-    // リンクをクリックしたらメニューを閉じる
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (nav.classList.contains('active')) {
-                toggleMenu();
-            }
+    if (hamburger && nav) {
+        hamburger.addEventListener("click", () => {
+            const isOpen = nav.classList.toggle("active");
+            hamburger.classList.toggle("active", isOpen);
+            hamburger.setAttribute("aria-expanded", String(isOpen));
+            document.body.classList.toggle("menu-open", isOpen);
         });
-    });
 
-    // スクロール時のヘッダー演出（オプション）
-    window.addEventListener('scroll', () => {
-        const header = document.querySelector('.header');
-        if (window.scrollY > 50) {
-            header.style.padding = '5px 0';
-        } else {
-            header.style.padding = '0';
+        nav.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("active");
+                hamburger.classList.remove("active");
+                hamburger.setAttribute("aria-expanded", "false");
+                document.body.classList.remove("menu-open");
+            });
+        });
+    }
+
+    const current = location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll(".site-nav a, .footer-nav a").forEach((link) => {
+        const target = link.getAttribute("href");
+        if (target === current) {
+            link.classList.add("is-current");
         }
     });
+
+    document.querySelectorAll("[data-year]").forEach((el) => {
+        el.textContent = new Date().getFullYear();
+    });
+
+    document.querySelectorAll("[data-company-name]").forEach((el) => {
+        el.textContent = window.SITE_DATA.company.name;
+    });
+
+    const newsRoot = document.querySelector("[data-news-list]");
+    if (newsRoot && window.SITE_DATA.news) {
+        newsRoot.innerHTML = window.SITE_DATA.news.map((item) => (
+            `<li><time datetime="${item.date.replaceAll(".", "-")}">${item.date}</time><span class="badge">${item.category}</span><span>${item.text}</span></li>`
+        )).join("");
+    }
 });
