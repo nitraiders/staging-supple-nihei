@@ -33,7 +33,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelectorAll("[data-company-name]").forEach((el) => {
-        el.textContent = window.SITE_DATA.company.name;
+        el.textContent = window.SITE_DATA.brand.operator;
+    });
+
+    document.querySelectorAll("[data-brand-name]").forEach((el) => {
+        el.textContent = window.SITE_DATA.brand.name;
     });
 
     const newsRoot = document.querySelector("[data-news-list]");

@@ -340,10 +340,12 @@ a:hover {
     border: 1px solid var(--line);
     border-radius: var(--radius);
     background: linear-gradient(180deg, #fff, var(--primary-soft));
+    max-width: 520px;
+    margin: 0 auto;
 }
 
 .product-photo img {
-    max-height: 430px;
+    max-height: 390px;
     width: auto;
     margin: 0 auto;
     border-radius: var(--radius);
@@ -636,6 +638,10 @@ a:hover {
         width: 100%;
     }
 
+    .product-photo {
+        max-width: 440px;
+    }
+
     .notice-list li {
         grid-template-columns: 1fr;
         gap: 8px;
@@ -681,6 +687,14 @@ a:hover {
 
     .btn {
         width: 100%;
+    }
+
+    .product-photo {
+        padding: 18px;
+    }
+
+    .product-photo img {
+        max-height: 330px;
     }
 
     .card,
