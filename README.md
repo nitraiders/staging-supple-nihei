@@ -13,7 +13,7 @@
 - `public/js/main.js`: ナビゲーションなどの軽量な表示制御
 - `scratch/public-source-docs/`: 公開ディレクトリから退避した作業用資料
 
-Express / Render 前提の `server.js` と npm 依存関係は削除済みです。HTML/CSS/JS のみで表示できます。
+Cloudflare Pages の本体サイトはHTML/CSS/JSのみで表示できます。ルートの `server.js` と `package.json` は、旧Render URLに移転案内だけを表示するための最小構成です。
 
 ## Cloudflare Pages 設定例
 
@@ -23,6 +23,17 @@ Express / Render 前提の `server.js` と npm 依存関係は削除済みです
 - Root directory: リポジトリ直下
 
 GitHub 連携後、上記設定で `public` 配下がそのまま公開対象になります。
+
+## Render 旧URLの移転案内
+
+旧Render URLでは、本体サイトを配信せず、移転案内のみを表示します。ルートの `server.js` と `package.json` はRender用の最小構成です。
+
+- Build command: 空欄、または `npm install`
+- Start command: `npm start`
+- Environment: `Node`
+- 表示先: `https://staging-supple-nihei.pages.dev`
+
+Render側では、どのパスにアクセスしても「サイト移転のお知らせ」を表示し、5秒後にCloudflare Pages側の新URLへ自動転送します。Cloudflare Pagesの公開対象は引き続き `public` のため、このRender用設定は静的サイト本体には影響しません。
 
 ## 問い合わせについて
 

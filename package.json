@@ -1,0 +1,12 @@
+{
+  "name": "kokoromi-render-migration-notice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal Render app that shows a migration notice for the old KoKoRoMi URL.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
