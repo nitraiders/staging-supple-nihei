@@ -1,9 +1,9 @@
 window.SITE_DATA = {
     brand: {
-        name: "KoKoRoMi",
-        nameEn: "KoKoRoMi Health & Beauty Project",
-        operatorLabel: "運営母体",
-        operator: "株式会社二信興業",
+        name: "株式会社ニヘイコーポレーション",
+        nameEn: "KoKoRoMi Official",
+        operatorLabel: "仮称会社",
+        operator: "株式会社ニヘイコーポレーション",
         address: "〒340-0053 埼玉県草加市旭町6-2-17",
         branch: "〒921-8154 石川県金沢市高尾南2-58-201",
         phone: "048-959-9810",
@@ -20,12 +20,12 @@ window.SITE_DATA = {
         {
             date: "2026.05.31",
             category: "お知らせ",
-            text: "KoKoRoMi Health & Beauty Project の初版公開準備を進めています。"
+            text: "株式会社ニヘイコーポレーション（仮称）/ KoKoRoMi Official の初版公開準備を進めています。"
         },
         {
             date: "2026.05.31",
             category: "商品情報",
-            text: "KoKoRoMi の商品情報ページを公開準備中です。"
+            text: "KoKoRoMi 瓶タイプを中心に、商品情報ページを公開準備中です。"
         }
     ]
 };
