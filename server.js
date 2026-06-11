@@ -10,7 +10,7 @@ function renderMovedPage() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="5;url=${NEW_SITE_URL}">
-    <title>サイト移転のお知らせ | KoKoRoMi Official</title>
+    <title>サイト移転のお知らせ | NKグループ</title>
     <style>
         :root {
             color-scheme: light;
@@ -102,7 +102,7 @@ function renderMovedPage() {
 </head>
 <body>
     <main>
-        <p class="brand">KoKoRoMi Official</p>
+        <p class="brand">NKグループ</p>
         <h1>サイト移転のお知らせ</h1>
         <p>KoKoRoMi公式サイトは下記URLへ移転しました。</p>
         <a class="button" href="${NEW_SITE_URL}">新サイトはこちら</a>

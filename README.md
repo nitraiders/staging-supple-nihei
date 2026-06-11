@@ -1,15 +1,15 @@
-# KoKoRoMi / Nihei Corporation static site
+# NK Group / KoKoRoMi static site
 
-株式会社ニヘイコーポレーション（仮称）/ KoKoRoMi Official の静的ブランド / 商品紹介サイトです。健康食品・美容関連商品の企画販売を行う仮称会社サイトとして、KoKoRoMi の情報と販売準備状況を掲載します。
+NKグループの静的ブランド / 商品紹介サイトです。株式会社二信興業を運営母体とする健康美容関連事業として、KoKoRoMi の情報と販売準備状況を掲載します。
 
-法人化、正式名称、屋号、販売元など未確定の情報は捏造せず、確定情報に基づき順次更新する前提です。株式会社二信興業は既存の建築会社として公式サイトがあるため、本サイトでは前面に出しません。
+販売元や運営体制など未確定の情報は捏造せず、確定情報に基づき順次更新する前提です。
 
 ## 構成
 
 - `public/`: Cloudflare Pages で公開する静的ファイル一式
 - `public/index.html`: トップページ
 - `public/css/index.css`: 共通スタイル
-- `public/js/site-data.js`: 仮称会社名、ブランド名、商品名、お知らせなどの共通データ
+- `public/js/site-data.js`: 事業名、運営母体、商品名、お知らせなどの共通データ
 - `public/js/main.js`: ナビゲーションなどの軽量な表示制御
 - `scratch/public-source-docs/`: 公開ディレクトリから退避した作業用資料
 

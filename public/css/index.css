@@ -83,6 +83,13 @@ a:hover {
     color: var(--primary-dark);
 }
 
+.brand img {
+    width: auto;
+    height: 62px;
+    max-width: min(360px, 52vw);
+    object-fit: contain;
+}
+
 .brand small {
     margin-top: 4px;
     color: var(--muted);
@@ -741,6 +748,13 @@ a:hover {
     color: #fff;
 }
 
+.site-footer .brand img {
+    height: 64px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: #fff;
+}
+
 .site-footer .brand small,
 .site-footer .small-note {
     color: rgba(255, 255, 255, 0.62);
@@ -866,6 +880,11 @@ a:hover {
 
     .brand {
         font-size: 0.95rem;
+    }
+
+    .brand img {
+        height: 54px;
+        max-width: min(270px, 64vw);
     }
 
     .brand small {
