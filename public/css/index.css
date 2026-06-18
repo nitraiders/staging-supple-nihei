@@ -546,6 +546,24 @@ a:hover {
     font-weight: 800;
 }
 
+.lp-banner-section {
+    padding-top: 0;
+}
+
+.lp-banner-stack {
+    display: grid;
+    gap: 18px;
+}
+
+.lp-banner-image {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(208, 176, 82, 0.3);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 16px 38px rgba(31, 45, 36, 0.09);
+}
+
 .ingredient-card {
     position: relative;
     overflow: hidden;

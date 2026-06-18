@@ -46,4 +46,28 @@ document.addEventListener("DOMContentLoaded", () => {
             `<li><time datetime="${item.date.replaceAll(".", "-")}">${item.date}</time><span class="badge">${item.category}</span><span>${item.text}</span></li>`
         )).join("");
     }
+
+    const lpBannerSection = document.querySelector("[data-lp-banner-section]");
+    const lpBannerList = document.querySelector("[data-lp-banner-list]");
+    const lpBannerImages = [
+        { src: "assets/kokoromi-lp-banner-main.jpg", alt: "KoKoRoMi 販促バナー" },
+        { src: "assets/kokoromi-lp-banner-ingredients.jpg", alt: "KoKoRoMi 注目成分バナー" },
+        { src: "assets/kokoromi-lp-banner-order.jpg", alt: "KoKoRoMi ご注文案内バナー" },
+    ];
+
+    if (lpBannerSection && lpBannerList) {
+        let visibleCount = 0;
+
+        lpBannerImages.forEach((item) => {
+            const image = new Image();
+            image.className = "lp-banner-image";
+            image.alt = item.alt;
+            image.onload = () => {
+                visibleCount += 1;
+                lpBannerList.appendChild(image);
+                lpBannerSection.hidden = false;
+            };
+            image.src = item.src;
+        });
+    }
 });
