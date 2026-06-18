@@ -1,6 +1,6 @@
 const http = require("http");
 
-const NEW_SITE_URL = "https://staging-supple-nihei.pages.dev";
+const NEW_SITE_URL = "https://ns-group.jp";
 const PORT = process.env.PORT || 3000;
 
 function renderMovedPage() {
@@ -10,7 +10,7 @@ function renderMovedPage() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="5;url=${NEW_SITE_URL}">
-    <title>サイト移転のお知らせ | NKグループ</title>
+    <title>サイト移転のお知らせ | NSグループ</title>
     <style>
         :root {
             color-scheme: light;
@@ -102,7 +102,7 @@ function renderMovedPage() {
 </head>
 <body>
     <main>
-        <p class="brand">NKグループ</p>
+        <p class="brand">NSグループ</p>
         <h1>サイト移転のお知らせ</h1>
         <p>KoKoRoMi公式サイトは下記URLへ移転しました。</p>
         <a class="button" href="${NEW_SITE_URL}">新サイトはこちら</a>

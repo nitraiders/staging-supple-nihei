@@ -4,7 +4,7 @@ window.SITE_DATA = {
         nameEn: "NS Group",
         operatorLabel: "運営母体",
         operator: "株式会社二信興業",
-        address: "〒340-0053 埼玉県草加市旭町6-2-17",
+        address: "",
         branch: "〒921-8154 石川県金沢市高尾南2-58-201",
         phone: "0120-180-618",
         emailStatus: "お問い合わせフォームよりご連絡ください"
@@ -20,7 +20,7 @@ window.SITE_DATA = {
         {
             date: "2026.05.31",
             category: "お知らせ",
-            text: "NSグループ公式サイトの初版公開準備を進めています。"
+            text: "NSグループ公式サイトを公開しました。"
         },
         {
             date: "2026.05.31",

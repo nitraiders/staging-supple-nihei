@@ -1,8 +1,8 @@
 {
-  "name": "nk-group-render-migration-notice",
+  "name": "ns-group-render-migration-notice",
   "version": "1.0.0",
   "private": true,
-  "description": "Minimal Render app that shows a migration notice for the old NK Group URL.",
+  "description": "Minimal Render app that shows a migration notice for the old NS Group URL.",
   "scripts": {
     "start": "node server.js"
   },
