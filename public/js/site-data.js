@@ -7,7 +7,7 @@ window.SITE_DATA = {
         address: "〒340-0053 埼玉県草加市旭町6-2-17",
         branch: "〒921-8154 石川県金沢市高尾南2-58-201",
         phone: "0120-180-618",
-        emailStatus: "現在準備中"
+        emailStatus: "お問い合わせフォームよりご連絡ください"
     },
     product: {
         name: "KoKoRoMi",
@@ -25,7 +25,7 @@ window.SITE_DATA = {
         {
             date: "2026.05.31",
             category: "商品情報",
-            text: "KoKoRoMi 瓶タイプを中心に、商品情報ページを公開準備中です。"
+            text: "KoKoRoMi 瓶タイプを中心に、商品情報ページを公開しています。"
         }
     ]
 };
