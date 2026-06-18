@@ -738,6 +738,42 @@ a:hover {
     color: var(--muted);
 }
 
+.form-preview {
+    display: grid;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.form-preview label {
+    display: grid;
+    gap: 8px;
+    color: var(--primary-dark);
+    font-weight: 800;
+}
+
+.form-preview input,
+.form-preview textarea {
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 13px 14px;
+    background: #f7faf5;
+    color: var(--muted);
+    font: inherit;
+}
+
+.form-preview textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-preview input:disabled,
+.form-preview textarea:disabled,
+.form-preview button:disabled {
+    cursor: not-allowed;
+    opacity: 0.72;
+}
+
 .site-footer {
     padding-top: 58px;
     background: #142018;
