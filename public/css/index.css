@@ -415,6 +415,137 @@ a:hover {
     color: var(--muted);
 }
 
+.promo-section {
+    padding-top: 0;
+}
+
+.promo-banner {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 0.54fr) minmax(260px, 0.72fr);
+    gap: 28px;
+    align-items: center;
+    padding: clamp(28px, 5vw, 54px);
+    border: 1px solid rgba(208, 176, 82, 0.42);
+    border-radius: 8px;
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(246, 252, 240, 0.88)),
+        radial-gradient(circle at 80% 20%, rgba(229, 196, 89, 0.28), transparent 34%),
+        linear-gradient(135deg, #f4fbec, #ffffff 42%, #fff8df);
+    box-shadow: 0 22px 58px rgba(95, 143, 85, 0.16);
+    overflow: hidden;
+}
+
+.promo-banner::before {
+    content: "";
+    position: absolute;
+    inset: 18px;
+    border: 1px solid rgba(95, 143, 85, 0.16);
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+.promo-copy,
+.promo-visual,
+.promo-offer {
+    position: relative;
+    z-index: 1;
+}
+
+.promo-copy h2 {
+    margin: 0 0 16px;
+    color: var(--primary-dark);
+    font-size: clamp(2.4rem, 6vw, 5rem);
+    line-height: 1.08;
+}
+
+.promo-copy p {
+    color: var(--muted);
+}
+
+.promo-lead {
+    margin: 0 0 12px;
+    color: var(--text);
+    font-size: clamp(1.1rem, 2vw, 1.45rem);
+    font-weight: 800;
+}
+
+.promo-ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.promo-ingredients span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 8px 14px;
+    border: 1px solid rgba(95, 143, 85, 0.28);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--primary-dark);
+    font-weight: 800;
+}
+
+.promo-visual {
+    padding: 18px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.74);
+}
+
+.promo-visual img {
+    max-height: 330px;
+    width: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 18px 38px rgba(31, 45, 36, 0.14);
+}
+
+.promo-offer {
+    display: grid;
+    gap: 14px;
+    padding: 26px;
+    border: 1px solid rgba(208, 176, 82, 0.42);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.promo-label {
+    margin: 0;
+    color: #8a6c37;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.promo-price {
+    margin: 0;
+    color: var(--primary-dark);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.promo-price span {
+    display: block;
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 0.42em;
+}
+
+.promo-phone {
+    margin: 0;
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.promo-phone a {
+    color: var(--primary-dark);
+    font-size: 1.18em;
+    font-weight: 800;
+}
+
 .ingredient-card {
     position: relative;
     overflow: hidden;
@@ -884,6 +1015,7 @@ a:hover {
     .hero-grid,
     .product-layout,
     .product-lineup,
+    .promo-banner,
     .expert-layout,
     .brochure-grid,
     .quality-strip,
@@ -961,6 +1093,28 @@ a:hover {
 
     .product-photo img {
         max-height: 330px;
+    }
+
+    .promo-banner {
+        gap: 20px;
+        padding: 26px;
+    }
+
+    .promo-banner::before {
+        inset: 10px;
+    }
+
+    .promo-visual {
+        order: -1;
+        padding: 14px;
+    }
+
+    .promo-visual img {
+        max-height: 280px;
+    }
+
+    .promo-offer {
+        padding: 20px;
     }
 
     .card,

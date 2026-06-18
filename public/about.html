@@ -3,19 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=company.html">
-    <title>NSグループについてへ移動 | NSグループ</title>
-    <meta name="description" content="NSグループについてのページへ移動します。">
+    <title>NSグループについて | NSグループ</title>
+    <meta name="description" content="NSグループについてのページです。KoKoRoMi、サプリメント事業、化粧品事業、コールセンター代行事業、営業代行事業、運営情報をご案内します。">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="section">
-        <div class="container">
-            <h1>NSグループについてのページへ移動します</h1>
-            <p>自動的に移動しない場合は、<a class="btn btn-primary" href="company.html">NSグループについて見る</a> を選択してください。</p>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html"><img src="assets/ns-group-logo-horizontal.jpg" alt="NSグループ"></a>
+            <button class="hamburger" id="hamburger" aria-label="メニューを開閉" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+            <nav class="site-nav" id="site-nav">
+                <ul>
+                    <li><a href="index.html">ホーム<small>Home</small></a></li>
+                    <li><a href="about.html">NSグループについて<small>About</small></a></li>
+                    <li><a href="product.html">商品紹介<small>Products</small></a></li>
+                    <li><a href="contact.html" class="nav-cta">お問い合わせ<small>Contact</small></a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">About NS Group</p>
+                <h1>NSグループについて</h1>
+                <p>NSグループは、KoKoRoMiを中心に健康食品・美容関連商品の情報を発信する新規事業サイトです。商品情報、事業内容、運営情報をひとつのページで確認できるよう整理しています。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Brand</p>
+                    <h2>NSグループとは</h2>
+                    <p>健康食品・美容関連商品の企画販売を中心に、商品案内、問い合わせ受付、販売支援の準備を進める健康美容関連事業です。過度な表現に頼らず、確認しやすい情報提供を大切にします。</p>
+                </div>
+                <div class="grid two">
+                    <article class="card">
+                        <h3>KoKoRoMiとは</h3>
+                        <p>KoKoRoMiは、「身も心も健康に」をコンセプトにした健康食品です。毎日の栄養補給と健康維持を考える方へ向けて、原材料、価格、注意事項をわかりやすくご案内します。</p>
+                        <div class="hero-actions compact">
+                            <a class="btn btn-primary" href="product.html">商品紹介へ</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>運営情報</h3>
+                        <p>販売元・運営体制など法務に関わる表記は、確定情報に基づき順次更新します。お問い合わせはフリーダイヤルまたはお問い合わせページをご確認ください。</p>
+                        <p class="price-main"><a href="tel:0120180618">0120-180-618</a></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-soft">
+            <div class="container">
+                <div class="section-head center">
+                    <p class="eyebrow">Business</p>
+                    <h2>事業内容</h2>
+                    <p>現在公開している情報を、重複しないようNSグループについてのページへ集約しています。</p>
+                </div>
+                <div class="grid two">
+                    <article class="card service-card service-primary">
+                        <p class="eyebrow">Supplement</p>
+                        <h3>サプリメント事業</h3>
+                        <p>KoKoRoMiを中心に、毎日の栄養補給と健康維持を考える方へ向けた健康食品・サプリメントの企画販売を準備しています。</p>
+                        <div class="hero-actions compact">
+                            <a class="btn btn-primary" href="product.html">商品紹介へ</a>
+                        </div>
+                    </article>
+                    <article class="card service-card coming-soon-card">
+                        <p class="eyebrow">Cosmetics</p>
+                        <h3>化粧品事業</h3>
+                        <p>美容と日々のケアに関わる商品の取り扱いを視野に入れ、品質、使用感、表示内容を確認しながら準備しています。</p>
+                        <span class="status-pill">Coming Soon</span>
+                    </article>
+                    <article class="card service-card coming-soon-card">
+                        <p class="eyebrow">Call Center</p>
+                        <h3>コールセンター代行事業</h3>
+                        <p>商品案内や問い合わせ受付など、顧客対応を支える体制づくりを検討しています。</p>
+                        <span class="status-pill">Coming Soon</span>
+                    </article>
+                    <article class="card service-card coming-soon-card">
+                        <p class="eyebrow">Sales Support</p>
+                        <h3>営業代行事業</h3>
+                        <p>健康食品・美容関連商品の販売活動を支える営業支援領域について、取り扱い条件や運用体制を整えながら準備を進めています。</p>
+                        <span class="status-pill">Coming Soon</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="cta-band">
+                    <p class="eyebrow">Next Step</p>
+                    <h2>商品情報とお問い合わせ</h2>
+                    <p>KoKoRoMiの商品情報、価格、原材料、注意事項は商品紹介ページに整理しています。ご相談はお問い合わせページよりご確認ください。</p>
+                    <div class="cta-actions">
+                        <a class="btn btn-primary" href="product.html">商品紹介へ</a>
+                        <a class="btn btn-outline" href="contact.html">お問い合わせへ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="brand" href="index.html"><img src="assets/ns-group-logo-horizontal.jpg" alt="NSグループ"></a>
+                <p class="small-note">NSグループは、健康食品・美容関連商品の企画販売を行う新規事業グループです。KoKoRoMiを中心に情報を発信しています。</p>
+            </div>
+            <nav class="footer-nav" aria-label="フッターナビゲーション">
+                <a href="index.html">ホーム</a>
+                <a href="about.html">NSグループについて</a>
+                <a href="product.html">商品紹介</a>
+                <a href="contact.html">お問い合わせ</a>
+                <a href="privacy.html">プライバシーポリシー</a>
+                <a href="security.html">情報セキュリティ方針</a>
+                <a href="commerce.html">特定商取引法に基づく表記</a>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">&copy; <span data-year></span> NSグループ. All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="js/site-data.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
