@@ -1129,7 +1129,8 @@ a:hover {
     .hero h1,
     .page-hero h1 {
         font-size: 2.15rem;
-        overflow-wrap: anywhere;
+        word-break: keep-all;
+        overflow-wrap: break-word;
     }
 
     .hero-lead,
@@ -1138,7 +1139,7 @@ a:hover {
     .page-hero p,
     .feature-list li,
     .info-table td {
-        overflow-wrap: anywhere;
+        overflow-wrap: break-word;
     }
 
     .hero-actions,
