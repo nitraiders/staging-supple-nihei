@@ -40,23 +40,43 @@
         <section class="section">
             <div class="container grid two">
                 <div class="contact-box">
-                    <h2>受付状況</h2>
+                    <h2>お電話でのお問い合わせ</h2>
+                    <p>商品の内容やご注文に関するご相談は、フリーダイヤルにて承っています。</p>
+                    <p class="price-main" style="margin: 1.5rem 0;">
+                        <a href="tel:0120180618">0120-180-618</a>
+                    </p>
                     <dl>
-                        <dt>お問い合わせフォーム</dt><dd>送信先設定が確定次第、設置予定です</dd>
                         <dt>ご注文・ご相談</dt><dd>フリーダイヤルで承ります</dd>
                         <dt>事業グループ名</dt><dd>NSグループ</dd>
                         <dt>電話番号</dt><dd><a href="tel:0120180618">0120-180-618</a></dd>
                     </dl>
-                    <p class="small-note">商品の内容やご注文に関するご相談は、現在フリーダイヤルにて承っています。</p>
+                    <p class="small-note">※おかけ間違いのないようご注意ください。</p>
                 </div>
                 <div class="card">
-                    <p class="eyebrow">Phone Contact</p>
-                    <h2>現在はお電話で承ります</h2>
-                    <p>商品の内容やご注文に関するご相談は、現在フリーダイヤルにて承っています。お問い合わせフォームは、送信先設定が確定次第、設置予定です。</p>
-                    <p class="price-main">
-                        <a href="tel:0120180618">0120-180-618</a>
-                    </p>
+                    <h2>お問い合わせフォーム</h2>
+                    <form action="【ここにFormspree等のフォームURLを貼る】" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="form-name">お名前 <span class="required">必須</span></label>
+                            <input type="text" id="form-name" name="お名前" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-phone">電話番号</label>
+                            <input type="tel" id="form-phone" name="電話番号">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">メールアドレス <span class="required">必須</span></label>
+                            <input type="email" id="form-email" name="メールアドレス" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">お問い合わせ内容 <span class="required">必須</span></label>
+                            <textarea id="form-message" name="お問い合わせ内容" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">送信する</button>
+                    </form>
                 </div>
+            </div>
+            
+            <div class="container" style="margin-top: 2rem;">
                 <div class="card">
                     <h2>お問い合わせ前に</h2>
                     <p>商品情報、価格、原材料、保存方法、注意事項は商品紹介ページに掲載しています。ご注文やご相談はフリーダイヤルでも承ります。</p>
