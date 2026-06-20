@@ -330,6 +330,14 @@ a:hover {
     flex-direction: column;
 }
 
+.product-card-image {
+    width: min(100%, 260px);
+    height: auto;
+    margin: 0 auto 22px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
 .product-card-main {
     border-color: rgba(95, 143, 85, 0.45);
     background: linear-gradient(180deg, #fff, #f4faf1);
@@ -1173,9 +1181,10 @@ a:hover {
     }
 
     .lp-banner-tel-link {
-        right: 5%;
-        bottom: 6%;
+        position: static;
+        width: 100%;
         min-width: 42%;
+        margin-top: 12px;
         padding: 8px 10px;
         font-size: 0.72rem;
     }
