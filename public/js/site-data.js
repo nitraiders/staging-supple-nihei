@@ -5,9 +5,9 @@ window.SITE_DATA = {
         operatorLabel: "運営母体",
         operator: "株式会社二信興業",
         address: "",
-        branch: "〒921-8154 石川県金沢市高尾南2-58-201",
+        branch: "〒921-8154 石川県金沢市高尾南2丁目58 虎本テナント201号室",
         phone: "0120-180-618",
-        emailStatus: "お問い合わせフォームよりご連絡ください"
+        emailStatus: "フリーダイヤルまたはお問い合わせフォームよりご連絡ください"
     },
     product: {
         name: "KoKoRoMi",
