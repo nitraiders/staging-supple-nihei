@@ -577,35 +577,53 @@ a:hover {
 }
 
 .lp-banner-callout {
-    display: grid;
-    gap: 12px;
+    position: relative;
+    container-type: inline-size;
+}
+
+.lp-banner-callout .lp-banner-image {
+    display: block;
 }
 
 .lp-banner-tel-link {
-    justify-self: end;
+    position: absolute;
+    right: 3%;
+    bottom: 2%;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-width: min(30%, 300px);
-    padding: 14px 22px;
+    padding: clamp(2px, 0.7cqw, 8px) clamp(6px, 2cqw, 22px);
     border: 1px solid rgba(95, 143, 85, 0.28);
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.94);
-    box-shadow: 0 14px 32px rgba(31, 45, 36, 0.16);
+    box-shadow: 0 2px 6px rgba(31, 45, 36, 0.16);
     color: var(--primary-dark);
-    font-size: clamp(0.82rem, 1.45vw, 1rem);
+    font-size: clamp(8px, 1.25cqw, 14px);
     font-weight: 800;
-    line-height: 1.35;
+    line-height: 1.15;
     text-align: center;
     text-decoration: none;
 }
 
 .lp-banner-tel-link strong {
-    margin-top: 2px;
+    margin-top: 1px;
     color: var(--primary-dark);
-    font-size: clamp(1.05rem, 2.4vw, 1.6rem);
-    line-height: 1.1;
+    font-size: clamp(11px, 2.2cqw, 24px);
+    line-height: 1.05;
+    white-space: nowrap;
+}
+
+@container (max-width: 340px) {
+    .lp-banner-tel-link {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .lp-banner-tel-link strong {
+        margin-top: 0;
+    }
 }
 
 .ingredient-card {
@@ -1212,16 +1230,6 @@ a:hover {
 
     .promo-offer {
         padding: 20px;
-    }
-
-    .lp-banner-tel-link {
-        width: 100%;
-        padding: 8px 10px;
-        font-size: 0.72rem;
-    }
-
-    .lp-banner-tel-link strong {
-        font-size: 0.92rem;
     }
 
     .card,
