@@ -548,6 +548,10 @@ a:hover {
     font-weight: 700;
 }
 
+.promo-phone span {
+    white-space: nowrap;
+}
+
 .promo-phone a {
     color: var(--primary-dark);
     font-size: 1.18em;
@@ -573,17 +577,12 @@ a:hover {
 }
 
 .lp-banner-callout {
-    position: relative;
-}
-
-.lp-banner-callout .lp-banner-image {
-    display: block;
+    display: grid;
+    gap: 12px;
 }
 
 .lp-banner-tel-link {
-    position: absolute;
-    right: 6%;
-    bottom: 7%;
+    justify-self: end;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -1216,10 +1215,7 @@ a:hover {
     }
 
     .lp-banner-tel-link {
-        position: static;
         width: 100%;
-        min-width: 42%;
-        margin-top: 12px;
         padding: 8px 10px;
         font-size: 0.72rem;
     }
