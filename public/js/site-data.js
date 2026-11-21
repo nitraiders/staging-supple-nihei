@@ -13,7 +13,7 @@ window.SITE_DATA = {
         name: "KoKoRoMi",
         nameJa: "KoKoRoMiこころみ",
         category: "デアザフラビン加工食品",
-        trialPrice: "1,800円(税込)",
+        trialPrice: "1,980円(税込)",
         bottlePrice: "18,000円(税込)"
     },
     news: [
